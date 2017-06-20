@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "My Product Marketplace"
 theme = "market"
 SectionPagesMenu = "main"
-disableRSS = true
+disableKinds=["RSS"]
 
 [params]
   description = "a site for displaying product info, built with Docker containers and other app builders in mind"

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/instant-app/wordpress/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/quickstart/node-mongo/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/instant-app/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/instant-app/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mongodb/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mysql/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/node/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/php/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/quickstart/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/quickstart/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/wordpress/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

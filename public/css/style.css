@@ -3,7 +3,6 @@
 body {
   font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
   background-color: inherit;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -127,10 +126,6 @@ a {
 }
 
 /*Nested flex containers and boxes that product summaries sit in*/
-#landing-list {
-  margin: .5em;
-}
-
 .container {
   display: flex;
   flex-flow: row wrap;
