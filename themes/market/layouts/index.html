@@ -4,16 +4,16 @@
 
 <!-- The main display image with welcome text overlaid -->
 <!-- static/img/header.jpg is the background image for .header-img in css -->
-<div class="header-img">
-  <div class="header-text">
+<div class="hero-img">
+  <div class="hero-text-div">
     <h1 id="welcome-text">{{ .Site.Params.Welcome }}</h1>
   </div>
 </div>
 
 <!-- Range that iterates over site sections and creates a list of products -->
-<!-- @todo add a product limit with 'first n'  -->
-{{ range $section, $taxonomy := .Site.Sections }}
-    <h4>{{ $section | humanize | title }}</h4>
+<!-- @todo check product limit with 'first 3'by adding more content  -->
+{{ range first 3 $section, $taxonomy := .Site.Sections }}
+    <h2>{{ $section | humanize | title }}</h2>
     <ul class="container">
         {{ range $taxonomy.Pages }}
         <li class="product-box">
@@ -24,5 +24,6 @@
           <p class="product-description box-item"> {{ .Params.description }}</p>
         </li>
         {{ end }}
+        <button class ="btn read-more" type="button">View More > </button>
     </ul>
 {{ end }}
