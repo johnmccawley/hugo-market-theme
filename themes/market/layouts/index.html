@@ -13,7 +13,7 @@
 <!-- Range that iterates over site sections and creates a list of products -->
 <!-- @todo add a product limit with 'first n'  -->
 {{ range $section, $taxonomy := .Site.Sections }}
-    <h4>{{ replace $section "-" " " }}</h4>
+    <h4>{{ $section | humanize | title }}</h4>
     <ul class="container">
         {{ range $taxonomy.Pages }}
         <li class="product-box">

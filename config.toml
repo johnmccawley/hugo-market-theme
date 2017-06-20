@@ -6,6 +6,6 @@ theme = "market"
 disableRSS = true
 
 [params]
-  description = "a site for displaying product info"
+  description = "a site for displaying product info, built with Docker containers and other app builders in mind"
   welcome = "Welcome to Our Marketplace"
   title = "Our Business Name"
