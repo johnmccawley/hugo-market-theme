@@ -10,5 +10,15 @@
 			</a>
 		</div>
 		{{ "<!-- place menu here -->" | safeHTML }}
+		<nav class="sidebar-nav">
+			 {{ $currentPage := . }}
+			 {{ range .Site.Menus.main }}
+			 <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+			 {{ end }}
+	 </nav>
+	 <div class="login-register">
+		 <button class="btn btn-link" type="button">Login</button>
+		 <button class="btn btn-link" type="button">Sign Up</button>
+	 </div>
 	</div>
 </header>
