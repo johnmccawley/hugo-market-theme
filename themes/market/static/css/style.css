@@ -13,14 +13,20 @@ a {
 }
 
  /** Top Header, Navigation and Site Branding **/
-.nav-container {
-  margin: 0;
-}
 
+.header-container {
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+ /** Site Branding left header **/
 .branding {
   display: flex;
   flex-flow: row nowrap;
   align-content: center;
+
 }
 
 .branding a {
@@ -37,6 +43,54 @@ a {
 #site-title {
   color: #65bc45;
   font-size: 1.5em;
+}
+
+/* Navigation Menu and Login Buttons */
+.top-nav {
+  display: flex;
+  flex: row nowrap;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.nav-li {
+  list-style: none;
+  flex: 0 0 auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+.top-nav-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+.top-nav-item:hover {
+  color: #65bc45;
+}
+
+/* Login and Sign Up Buttons Top Right */
+.login-register {
+  display: flex;
+}
+
+.btn {
+  margin: 5px 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 2px solid #65bc45;
+  border-radius: 5px;
+  color:#000;
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 /*Hero image and text overlay - html located in index.html*/

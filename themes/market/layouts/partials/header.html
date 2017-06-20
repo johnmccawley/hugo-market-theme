@@ -1,6 +1,6 @@
 {{ "<!-- Header with Navigation - but it doesn't work?! -->" | safeHTML }}
 <header id="header">
-	<div class="nav-container">
+	<div class="header-container">
 		<div class="branding">
 			<a href="{{ .Site.BaseURL }}">
 				<img id="site-logo" src="/img/logo.jpg" alt="logo" />
@@ -9,13 +9,15 @@
 				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
 			</a>
 		</div>
-		{{ "<!-- place menu here -->" | safeHTML }}
-		<nav class="sidebar-nav">
+
+		<div class="top-nav">
 			 {{ $currentPage := . }}
+			 <ul class="nav-ul">
 			 {{ range .Site.Menus.main }}
-			 <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+			 <li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
 			 {{ end }}
-	 </nav>
+		 </ul>
+	 </div>
 	 <div class="login-register">
 		 <button class="btn btn-link" type="button">Login</button>
 		 <button class="btn btn-link" type="button">Sign Up</button>
