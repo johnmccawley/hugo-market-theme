@@ -1,0 +1,14 @@
+
+name = "Market"
+license = "MIT"
+licenselink = "https://github.com/anc02d"
+description = "a product display catalog"
+homepage = "http://noeldevelops.com/"
+tags = []
+features = []
+min_version = "0.1.0"
+
+
+[author]
+  name = "Noel Cothren"
+  homepage = "http://noeldevelops.com"

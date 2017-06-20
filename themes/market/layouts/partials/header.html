@@ -1,0 +1,14 @@
+{{ "<!-- Header with Navigation - but it doesn't work?! -->" | safeHTML }}
+<header id="header">
+	<div class="nav-container">
+		<div class="branding">
+			<a href="{{ .Site.BaseURL }}">
+				<img id="site-logo" src="/img/logo.jpg" alt="logo" />
+			</a>
+			<a href="{{ .Site.BaseURL }}">
+				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
+			</a>
+		</div>
+		{{ "<!-- place menu here -->" | safeHTML }}
+	</div>
+</header>

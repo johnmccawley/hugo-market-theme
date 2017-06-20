@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+
+<body>
+  {{ partial "header.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  Tags: {{ delimit .Params.tags ", " }}
+  </body>
+{{ partial "footer.html" . }}

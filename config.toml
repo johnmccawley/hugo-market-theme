@@ -1,0 +1,11 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+title = "My Product Marketplace"
+theme = "market"
+#SectionPagesMenu = "main"
+disableRSS = true
+
+[params]
+  description = "a site for displaying product info"
+  welcome = "Welcome to Our Marketplace"
+  title = "Our Business Name"

@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+
+<!-- The main display image with welcome text overlaid -->
+<!-- static/img/header.jpg is the background image for .header-img in css -->
+<div class="header-img">
+  <div class="header-text">
+    <h1 id="welcome-text">{{ .Site.Params.Welcome }}</h1>
+  </div>
+</div>
+
+<!-- Range that iterates over site sections and creates a list of products -->
+<!-- @todo add a product limit with 'first n'  -->
+{{ range $section, $taxonomy := .Site.Sections }}
+    <h4>{{ replace $section "-" " " }}</h4>
+    <ul class="container">
+        {{ range $taxonomy.Pages }}
+        <li class="product-box">
+          <a class="box-item" href="{{ .Permalink}}">
+            <img class="product-logo box-item" src="{{ .Params.logo }}" />
+            <p class="product-name box-item">{{ .Params.productname }}</p>
+          </a>
+          <p class="product-description box-item"> {{ .Params.description }}</p>
+        </li>
+        {{ end }}
+    </ul>
+{{ end }}
