@@ -19,7 +19,7 @@ a {
 .header-container {
   margin: 0;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -126,7 +126,8 @@ a {
   /*text-shadow: 1px 1px 2px black, 0 0 0.2em #98593F; rust-orange*/
 }
 
-/*Nested flex containers and boxes that product summaries sit in*/
+/* Nested flex containers and boxes that product summaries sit in on landing page */
+
 #landing-list {
   margin: .5em;
 }
@@ -174,4 +175,20 @@ a {
   align-self: center;
   flex: 0 0 auto;
   padding-bottom: 35px;
+}
+
+/* Single Page Default */
+.single-container {
+  margin: 1em;
+}
+
+.tags {
+  list-style: none;
+  display: inline-flex;
+  margin: inherit;
+}
+
+.tags li {
+  padding: 5px;
+  align-self: center;
 }

@@ -2,8 +2,20 @@
 
 <body>
   {{ partial "header.html" . }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  Tags: {{ delimit .Params.tags ", " }}
-  </body>
+
+  <section class="single-container">
+    <h1>{{ .Title }}</h1>
+    <div class="single-content">
+      {{ .Content }}
+      <ul class="tags">
+          <h4>Tags:</h4>
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+</body>
+
 {{ partial "footer.html" . }}
