@@ -5,8 +5,7 @@
       <li>{{ $taxonomyname | humanize | title }}
         <ul class="side-sub-list">
           {{ range $key, $value := $taxonomy }}
-          <li><a href="{{ "/" | relLangURL}}{{ $key | urlize }}"> {{ $key | humanize | title }} </a> </li>
-
+          <li><a href="/{{ $taxonomyname }}{{ $key | relURL }}"> {{ $key | humanize | title }} </a> </li>
           {{ end }}
         </ul>
       </li>

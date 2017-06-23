@@ -1,10 +1,5 @@
 <li class="product-list-item">
 <a href="{{ .Permalink }}">{{ .Title }}</a>
 <p> {{ .Description }} </p>
-<ul class="tags">
-  <li><h4>Tags:</h4></li>
-  {{ range .Params.tags }}
-  <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-  {{ end }}
-</ul>
+{{ partial "gettags.html" . }}
 </li>

@@ -1,0 +1,5 @@
+<ol class="breadcrumb">
+  <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
+  <li><a href="{{ .Site.BaseURL }}/{{ .Section }}/"> {{ .Page.Section | humanize | title }}s </a></li>
+  <li><a class="active"> {{.Title}} </a></li>
+</ol>
