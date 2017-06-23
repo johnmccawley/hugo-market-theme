@@ -4,20 +4,23 @@
 
 <!-- The main display image with welcome text overlaid -->
 <!-- static/img/header.jpg is the background image for .header-img in css -->
-<div class="hero-img">
-  <div class="hero-text-div">
+<div class="jumbotron hero-img">
+  <div class="container hero-text-div">
     <h1 id="welcome-text">{{ .Site.Params.Welcome }}</h1>
   </div>
 </div>
 
 <!-- Range that iterates over site sections and creates a list of products -->
 <!-- @todo check product limit with 'first 3'by adding more content  -->
-<section id="landing-list">
+<div class="container-fluid">
+<section class="row">
 {{ range $sections := .Site.Home.Sections }}
-    <h2 class="section-title">{{ .Title | humanize | title }}</h2>
-    <ul class="container">
+    <h2 class="section-title col-md-12">{{ .Title | humanize | title }}</h2>
+    <button class ="btn btn-default read-more" type="button">View More > </button>
+
+    <ul class="row">
         {{ range $sections.Pages }}
-        <li class="product-box">
+        <li class="product-box col-md-4">
           <a class="box-item" href="{{ .Permalink}}">
             <img class="product-logo box-item" src="{{ .Params.logo }}" />
             <p class="product-name box-item">{{ .Params.productname }}</p>
@@ -25,7 +28,7 @@
           <p class="product-description box-item"> {{ .Params.description }}</p>
         </li>
         {{ end }}
-        <button class ="btn read-more" type="button">View More > </button>
     </ul>
 {{ end }}
 </section>
+</div><!--.container-fluid>

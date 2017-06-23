@@ -1,26 +1,36 @@
 
-<header id="header">
-	<div class="header-container">
-		<div class="branding">
+<nav class="navbar navbar-default navbar-fixed-top">
+<header id="header" class="container-fluid">
+	<div class="row">
+		<div class="branding col-md-4">
+
 			<a href="{{ .Site.BaseURL }}">
 				<img id="site-logo" src="/img/logo.jpg" alt="logo" />
 			</a>
 			<a href="{{ .Site.BaseURL }}">
 				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
 			</a>
+
 		</div>
 
-		<div class="top-nav">
+		<div class="navbar col-md-8" role="navigation">
+			<div class="row">
+				<div class="col-md-8">
 			 {{ $currentPage := . }}
-			 <ul class="nav-ul">
+			 <ul class="nav navbar-nav navbar-right">
 			 {{ range .Site.Menus.main }}
 			 <li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
 			 {{ end }}
 		 </ul>
-	 </div>
-	 <div class="login-register">
-		 <button class="btn btn-link" type="button">Login</button>
-		 <button class="btn btn-link" type="button">Sign Up</button>
-	 </div>
-	</div>
+	 </div><!--site navigation-->
+	 <div class=" nav nav-pills login-register col-md-4">
+		 <ul class="nav nav-justified nav-pills">
+		 	<li><button class="btn btn-default" type="button">Login</button></li>
+			<li><button class="btn btn-default" type="button">Sign Up</button></li>
+		</ul>
+	</div><!--login-register-->
+ </div><!--inner navbar row-->
+ </div><!--navbar-->
+ </div><!--entire header .row-->
 </header>
+</nav>
