@@ -5,28 +5,34 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-    <ol class="breadcrumb">
-      <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
-        <li><a href="{{ .Page.Section }}"> {{ .Page.Section | humanize | title }} </a></li>
-        <li><a class="active"> {{.Title}} </a></li>
-      </ol>
+      <div class="col-md-12">
+        <ol class="breadcrumb">
+          <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
+          <li><a href="{{ .Page.Section }}"> {{ .Page.Section | humanize | title }} </a></li>
+          <li><a class="active"> {{.Title}} </a></li>
+        </ol>
     </div>
-  <div class=" row">
-    <div class="col-md-2"></div>
-    <div class="col-md-7">
-    <h1>{{ .Title }}</h1>
-    <div class="single-content">
-      {{ .Content }}
-      <ul class="tags">
-          <h4>Tags:</h4>
-        {{ range .Params.tags }}
-        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-        {{ end }}
-      </ul>
-    </div>
-    </div>
-  </div>
-
+    <div class=" row">
+      <div class="col-md-offset-1 col-md-2">
+        <img class="single-logo" src="{{ .Params.logo }}" />
+      </div>
+      <div class="col-md-5">
+        <h1>{{ .Title }}</h1>
+        <div class="content">
+          {{ .Content }}
+          <ul class="tags">
+            <li><h4>Tags:</h4></li>
+            {{ range .Params.tags }}
+            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+            {{ end }}
+          </ul>
+        </div><!--.content -->
+      </div><!--col with content, title, tags -->
+      <div class="col-md-4 sidebar visible-md-4 visible-lg-4">
+        {{ partial "sidebar.html" . }}
+      </div><!--col with sidebar-->
+    </div><!--.row for all content -->
+  </div> <!-- .row for entire page below header -->
 </body>
 
 {{ partial "footer.html" . }}
