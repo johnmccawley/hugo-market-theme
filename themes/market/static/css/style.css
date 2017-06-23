@@ -168,17 +168,23 @@ ul.row {
 .box-item {
   font-size: small;
   overflow: hidden;
+  padding-top: 1em;
+  padding-left: .5em;
 }
 
 .product-logo {
   width: 50px;
-  height: 50px;
+  height: auto;
+  display: inline-flex;
 }
 .product-name {
   font-size: 1.25em;
   color: black;
+  display: inline-flex;
 }
-
+.product-description {
+  margin-top: .5em;
+}
 
 /********************************************
 ********************************************
@@ -209,5 +215,43 @@ ul.row {
      ***** Sidebar *****
 ********************************************/
 .sidebar {
+  margin: 0px;
   height: 100vw;
+}
+
+#sidebar-title {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid #65bc45;
+}
+
+.side-list {
+  line-height: 2em;
+}
+.side-sub-list {
+  list-style: none;
+}
+
+/*************************************
+***** List View *****
+*************************************/
+.list-title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #65bc45;
+  padding-bottom: 0.5em;
+}
+
+#product-list {
+  list-style: none;
+}
+
+.product-list-item {
+  padding-top: 0.5em;
+  border-bottom: 2px solid #65bc45;
+}
+
+.product-list-item > a {
+  font-size: 1.5em;
+  color: black;
 }

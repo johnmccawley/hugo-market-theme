@@ -1,9 +1,9 @@
 <div class="well well-lg">
-<h4>Explore the Site</h4>
-  <ul class="list-unstyled">
+<h4 id="sidebar-title">Explore the Site</h4>
+  <ul class="side-list list-unstyled">
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
       <li>{{ $taxonomyname | humanize | title }}
-        <ul>
+        <ul class="side-sub-list">
           {{ range $key, $value := $taxonomy }}
           <li><a href="{{ "/" | relLangURL}}{{ $key | urlize }}"> {{ $key | humanize | title }} </a> </li>
 

@@ -8,10 +8,10 @@
       <div class="col-md-12">
         <ol class="breadcrumb">
           <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
-          <li><a href="{{ .Page.Section }}"> {{ .Page.Section | humanize | title }} </a></li>
+          <li><a href="{{ .Page.Section }}"> {{ .Page.Section | humanize | title }}s </a></li>
           <li><a class="active"> {{.Title}} </a></li>
         </ol>
-    </div>
+      </div><!-- end breadcrumb column -->
     <div class=" row">
       <div class="col-md-offset-1 col-md-2">
         <img class="single-logo" src="{{ .Params.logo }}" />
