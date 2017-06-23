@@ -13,14 +13,17 @@
 <!-- Range that iterates over site sections and creates a list of products -->
 <!-- @todo check product limit with 'first 3'by adding more content  -->
 <div class="container-fluid">
-<section class="row">
+<section id="landing-list" class="row">
 {{ range $sections := .Site.Home.Sections }}
-    <h2 class="section-title col-md-12">{{ .Title | humanize | title }}</h2>
-    <button class ="btn btn-default read-more" type="button">View More > </button>
-
+<div class="row">
+    <h2 class="section-title">{{ .Title | humanize | title }}</h2>
+    <a class="view-all" href="{{.URL}}">
+    <button class ="btn btn-default read-more" type="button">View All > </button>
+  </a>
+</div>
     <ul class="row">
         {{ range $sections.Pages }}
-        <li class="product-box col-md-4">
+        <li class="product-box col-md-3">
           <a class="box-item" href="{{ .Permalink}}">
             <img class="product-logo box-item" src="{{ .Params.logo }}" />
             <p class="product-name box-item">{{ .Params.productname }}</p>
@@ -28,7 +31,8 @@
           <p class="product-description box-item"> {{ .Params.description }}</p>
         </li>
         {{ end }}
+
     </ul>
 {{ end }}
 </section>
-</div><!--.container-fluid>
+</div><!--.container-fluid-->

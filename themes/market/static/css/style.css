@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
-/*override bootstrap padding*/
+/**********************************************
+**** clear out and override some bootstrap defaults ****
+**********************************************/
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.row {
+  margin: 0 0.5em;
 }
 
 body {
@@ -21,7 +27,11 @@ a {
   text-decoration: none;
 }
 
- /** Top Header, Navigation and Site Branding **/
+ /***********************************************
+ *********************************************
+ *** Top Header, Navigation and Site Branding ***
+ *********************************************
+ *********************************************/
  .container-fluid {
    padding: 0;
  }
@@ -31,7 +41,9 @@ a {
   font-size: 1.2em;
 }
 
- /** Site Branding left header **/
+ /***********************************************
+ ***** Site Branding left header *****
+ *********************************************/
 .branding a {
   display: inline-block;
   text-decoration: none;
@@ -47,7 +59,9 @@ a {
   font-size: 1.5em;
 }
 
-/* Navigation Menu and Login Buttons */
+/**********************************************
+ ***** Top Navigation Menu and Login Buttons *****
+ **********************************************/
 .navbar {
   margin-bottom: 0;
 }
@@ -71,7 +85,9 @@ a {
   width: 50px;
   }
 }
-/* Login and Sign Up Buttons Top Right */
+/**********************************************
+***** Login and Sign Up Buttons Top Nav ****
+*********************************************/
 .login-register {
   display: flex;
 }
@@ -93,7 +109,10 @@ a {
     background-color: rgba(101, 188, 69, 0.98);
     border-color: #65bc45;
   }
-/*Hero image and text overlay - html located in index.html*/
+
+/*********************************************
+***** Hero image and text overlay - located in index.html *****
+*********************************************/
 .hero-img {
   background-image:
     linear-gradient(
@@ -112,25 +131,27 @@ a {
   text-shadow: 1px 1px 2px black, 0 0 0.2em #98593F; rust-orange
 }
 
-/* Nested flex containers and boxes that product summaries sit in on landing page */
+/*********************************************
+***** landing page items *****
+********************************************/
 
-/*#landing-list {
-  margin: .5em;
+#landing-list {
+  margin-left: 1em
 }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-content: center;
-  height: 200px;
+.section-title {
+  display: inline-block;
 }
+.view-all {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+ul.row {
+    list-style: none;
+  }
 
 .product-box {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  flex: 0 0 20%;
   margin: 10px;
   border: 1px solid rgba(101, 188, 69, 0.5); //dg green transparent
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075);
@@ -140,30 +161,25 @@ a {
 }
 
 .box-item {
-  display: flex;
-  padding: 2%;
   font-size: small;
-  flex: 1 0 auto;
   overflow: hidden;
-}*/
+}
 
 .product-logo {
   width: 50px;
   height: 50px;
 }
-/*.product-name {
+.product-name {
   font-size: 1.25em;
+  color: black;
 }
 
-.read-more {
-  width: auto;
-  height: 1.5em;
-  align-self: center;
-  flex: 0 0 auto;
-  padding-bottom: 35px;
-}*/
 
-/* Single Page Default */
+/********************************************
+********************************************
+     ***** Single Page Default *****
+********************************************
+********************************************/
 .single-container {
   margin: 1em;
 }
