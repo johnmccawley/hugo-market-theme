@@ -16,7 +16,7 @@ body {
   font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
   background-color: inherit;
   margin: 0;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,6 +158,8 @@ ul.row {
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075);
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.075);
   min-width: inherit;
+  height: 15vw;
+  overflow: hidden;
 }
 
 .box-item {
@@ -180,9 +182,6 @@ ul.row {
      ***** Single Page Default *****
 ********************************************
 ********************************************/
-.single-container {
-  margin: 1em;
-}
 
 .tags {
   list-style: none;

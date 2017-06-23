@@ -1,6 +1,6 @@
 +++
 title = ""
-description = ""
+description = "change for list/summaries - limit to 30 words for best fit"
 date = ""
 
 productName = ""

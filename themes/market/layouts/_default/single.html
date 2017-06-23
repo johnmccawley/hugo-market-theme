@@ -1,9 +1,19 @@
 {{ partial "head.html" . }}
 
-<body>
-  {{ partial "header.html" . }}
+{{ partial "header.html" . }}
 
-  <section class="single-container">
+<body>
+  <div class="container-fluid">
+    <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
+        <li><a href="{{ .Page.Section }}"> {{ .Page.Section | humanize | title }} </a></li>
+        <li><a class="active"> {{.Title}} </a></li>
+      </ol>
+    </div>
+  <div class=" row">
+    <div class="col-md-2"></div>
+    <div class="col-md-7">
     <h1>{{ .Title }}</h1>
     <div class="single-content">
       {{ .Content }}
@@ -14,7 +24,8 @@
         {{ end }}
       </ul>
     </div>
-  </section>
+    </div>
+  </div>
 
 </body>
 
