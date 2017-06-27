@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io"
 languageCode = "en-us"
 title = "My Product Marketplace"
 theme = "market"
