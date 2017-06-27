@@ -12,6 +12,10 @@
   margin: 0 0.5em;
 }
 
+.nav {
+  padding-left: 2.5em;
+}
+
 body {
   font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
   background-color: inherit;
@@ -131,7 +135,8 @@ a {
   color: white;
   font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
   font-size: .75em;
-  text-shadow: 1px 1px 2px black, 0 0 0.2em #98593F; rust-orange
+  text-shadow: 1px 1px 2px black, 0 0 0.2em #98593F;
+  text-align: center;
 }
 
 /*********************************************

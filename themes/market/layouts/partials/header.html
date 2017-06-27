@@ -10,27 +10,32 @@
 			<a href="{{ .Site.BaseURL }}">
 				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
 			</a>
-
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
 		</div>
 
-		<div class="col-md-8" role="navigation">
-			<div class="row">
-				<div class="col-md-8">
-			 {{ $currentPage := . }}
-			 <ul class="nav navbar-nav navbar-right">
-			 {{ range .Site.Menus.main }}
-			 <li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
-			 {{ end }}
-		 </ul>
-	 </div><!--site navigation-->
-	 <div class=" nav nav-pills login-register col-md-4">
-		 <ul class="nav nav-justified nav-pills">
-		 	<li><button class="btn btn-default" type="button">Login</button></li>
-			<li><button class="btn btn-default" type="button">Sign Up</button></li>
-		</ul>
-	</div><!--login-register-->
- </div><!--inner navbar row-->
- </div><!--navbar-->
+		<div class="collapse navbar-collapse col-md-8" role="navigation">
+				<div class="row">
+					<div class="col-md-8">
+					 {{ $currentPage := . }}
+					 <ul class="nav navbar-nav navbar-right">
+						 {{ range .Site.Menus.main }}
+						 <li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
+						 {{ end }}
+				 	</ul>
+		 		</div><!--site navigation-->
+				<div class=" nav nav-pills login-register col-md-4">
+					<ul class="nav nav-justified nav-pills">
+						<li><button class="btn btn-default" type="button">Login</button></li>
+						<li><button class="btn btn-default" type="button">Sign Up</button></li>
+					</ul>
+				</div><!--login-register-->
+			</div><!--inner navbar row-->
+		</div><!--role = navigation navbar-->
  </div><!--entire header .row-->
 </header>
 </nav>
