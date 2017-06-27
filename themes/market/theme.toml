@@ -1,12 +1,12 @@
 
 name = "Market"
 license = "MIT"
-licenselink = "https://github.com/anc02d"
+licenselink = "https://github.com/anc02d/hugo-market-theme"
 description = "a product display catalog"
 homepage = "http://noeldevelops.com/"
-tags = []
+tags = ["company", "bootstrap", "responsive", "custom themes", "product"]
 features = []
-min_version = "0.1.0"
+min_version = "0.21"
 
 
 [author]
