@@ -10,7 +10,7 @@
 			<a href="{{ .Site.BaseURL }}">
 				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
 			</a>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseThis" aria-expanded="false" aria-controls="collapseThis">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -18,7 +18,7 @@
 			      </button>
 		</div>
 
-		<div class="collapse navbar-collapse col-md-8" role="navigation">
+		<div id="collapseThis" class="collapse navbar-collapse col-md-8" role="navigation">
 				<div class="row">
 					<div class="col-md-8">
 					 {{ $currentPage := . }}
@@ -35,7 +35,7 @@
 					</ul>
 				</div><!--login-register-->
 			</div><!--inner navbar row-->
-		</div><!--role = navigation navbar-->
+		</div><!--role = navigation #collapseThis-->
  </div><!--entire header .row-->
 </header>
 </nav>
