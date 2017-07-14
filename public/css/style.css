@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+/**********************************************
+**** clear out and override some bootstrap defaults ****
+**********************************************/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row {
+  margin: 0 0.5em;
+}
+
+.nav {
+  padding-left: 2.5em;
+}
+
+body {
+  font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
+  background-color: inherit;
+  margin: 0;
+  padding-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /***********************************************
+ *********************************************
+ *** Top Header, Navigation and Site Branding ***
+ *********************************************
+ *********************************************/
+ .container-fluid {
+   padding: 0;
+ }
+
+#header {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+ /***********************************************
+ ***** Site Branding left header *****
+ *********************************************/
+.branding a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#site-logo {
+  width: 100px;
+  height: auto;
+}
+
+#site-title {
+  color: #65bc45;
+  font-size: 1.5em;
+}
+
+/**********************************************
+ ***** Top Navigation Menu and Login Buttons *****
+ **********************************************/
+.navbar {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+}
+
+.nav-li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #777;
+}
+
+@media (min-width: 768px) {
+  .nav-justified>li {
+  width: 50px;
+  }
+}
+/**********************************************
+***** Login and Sign Up Buttons Top Nav ****
+*********************************************/
+.login-register {
+  display: flex;
+}
+
+.btn {
+  margin: 18px 5px;
+  background-color: #ffffff;
+  border: 2px solid #65bc45;
+  border-radius: 5px;
+  color:#000;
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: rgba(101, 188, 69, 0.98);
+    border-color: #65bc45;
+  }
+
+/*********************************************
+***** Hero image and text overlay - located in index.html *****
+*********************************************/
+.hero-img {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/img/header.jpg");
+  width: 100vw;
+  margin-top: -.5em;
+}
+
+.hero-text-div {
+  color: white;
+  font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
+  font-size: .75em;
+  text-shadow: 1px 1px 2px black, 0 0 0.2em #98593F;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1058px) {
+.hero-img {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-img {
+    margin-top: 2em;
+  }
+}
+/*********************************************
+***** landing page items *****
+********************************************/
+
+#landing-list {
+  margin-left: 1em
+}
+
+.section-title {
+  display: inline-block;
+}
+.view-all {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+ul.row {
+    list-style: none;
+  }
+
+.product-box {
+  margin: 10px;
+  border: 1px solid rgba(101, 188, 69, 0.5); //dg green transparent
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.075);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.075);
+  max-width: 33vw;
+  min-height: 15vw;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media screen and (max-width: 749px) {
+    .product-description {
+      display: none;
+    }
+}
+
+.box-item {
+  font-size: small;
+  overflow: hidden;
+  padding-top: 1em;
+  padding-left: .5em;
+}
+
+.product-logo {
+  width: 50px;
+  height: auto;
+  display: inline-flex;
+}
+.product-name {
+  font-size: 1.25em;
+  color: black;
+  display: inline-flex;
+}
+.product-description {
+  margin-top: .5em;
+}
+
+/********************************************
+********************************************
+     ***** Single Page Default *****
+********************************************
+********************************************/
+.single-logo {
+  width: 80%;
+}
+.breadcrumb {
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4);
+  padding: 1.25em;
+}
+
+.tags {
+  list-style: none;
+  display: inline-flex;
+}
+
+.tags li {
+  padding: 5px;
+  align-self: center;
+}
+
+/********************************************
+     ***** Sidebar *****
+********************************************/
+.sidebar {
+  margin: 0px;
+  height: 100vw;
+}
+
+#sidebar-title {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid #65bc45;
+}
+
+.side-list {
+  line-height: 2em;
+}
+.side-sub-list {
+  list-style: none;
+}
+
+/*************************************
+***** List View *****
+*************************************/
+.list-title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #65bc45;
+  padding-bottom: 0.5em;
+}
+
+#product-list {
+  list-style: none;
+}
+
+.product-list-item {
+  padding-top: 0.5em;
+  border-bottom: 2px solid #65bc45;
+}
+
+.product-list-item > a {
+  font-size: 1.5em;
+  color: black;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/instant-app/wordpress/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/quickstart/node-mongo/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/categories/instant-app/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/instant-app/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/javascript/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/mongo/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/mysql/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/node/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/php/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/categories/quickstart/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/quickstart/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/</loc>
+    <lastmod>2017-06-20T07:29:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/tags/wordpress/</loc>
+    <lastmod>2017-06-20T08:06:48-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
