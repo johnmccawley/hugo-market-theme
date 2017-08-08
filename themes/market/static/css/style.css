@@ -17,14 +17,20 @@
 }
 
 body {
-  font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
-  background-color: inherit;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #404040;
+  background-color: white;
   margin: 0;
   padding-top: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  color: black;
 }
 
 a {
@@ -54,7 +60,7 @@ a {
 }
 
 #site-logo {
-  width: 100px;
+  max-width: 210px;
   height: auto;
 }
 
