@@ -1,7 +1,7 @@
 {{/* render breadcrumb nav for single product view
   this does not work for the list view pages with tags for some reason! */}}
 <ol class="breadcrumb">
-  <li><a href="{{ .Site.BaseURL }}"> Home </a></li>
+  <li class="home-crumb"><a href="{{ .Site.BaseURL }}"> Marketplace </a></li>
   <li><a href="{{ .Site.BaseURL }}/{{ .Section }}/"> {{ .Page.Section | humanize | title }}s </a></li>
   <li><a class="active"> {{.Title}} </a></li>
 </ol>

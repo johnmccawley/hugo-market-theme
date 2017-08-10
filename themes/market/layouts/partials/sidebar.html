@@ -1,8 +1,8 @@
-<div class="well well-lg">
-<h4 id="sidebar-title">Explore the Site</h4>
+<div class="nav-sidebar">
+<h4 id="sidebar-title">Explore the Marketplace</h4>
   <ul class="side-list list-unstyled">
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <li>{{ $taxonomyname | humanize | title }}
+      <li> {{ $taxonomyname | humanize | title }}:
         <ul class="side-sub-list">
           {{ range $key, $value := $taxonomy }}
           <li><a href="/{{ $taxonomyname }}{{ $key | relURL }}"> {{ $key | humanize | title }} </a> </li>

@@ -5,23 +5,24 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         {{ partial "breadcrumbs.html" . }}
+        <hr>
       </div><!-- end breadcrumb column -->
-    <div class=" row">
-      <div class="col-md-offset-1 col-md-2">
-        <img class="single-logo" src="{{ .Params.logo }}" />
-      </div>
-      <div class="col-md-5">
+    <div class="row">
+      <div class="col-md-4 sidebar hidden-xs hidden-sm">
+        {{ partial "sidebar.html" . }}
+      </div><!--col with sidebar-->
+      <div class="single-content col-md-5">
         <h1>{{ .Title }}</h1>
         <div class="content">
           {{ .Content }}
           {{ partial "gettags.html" . }}
         </div><!--.content -->
       </div><!--col with content, title, tags -->
-      <div class="col-md-4 sidebar visible-md-4 visible-lg-4">
-        {{ partial "sidebar.html" . }}
-      </div><!--col with sidebar-->
+      <div class="col-md-2">
+        <img class="single-logo" src="{{ .Params.logo }}" />
+      </div>
     </div><!--.row for all content -->
   </div> <!-- .row for entire page below header -->
 </body>
