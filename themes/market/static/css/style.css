@@ -17,10 +17,10 @@
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #404040;
+  color: #333333;
   background-color: white;
   margin: 0;
   padding-top: 80px;
@@ -30,99 +30,110 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.1;
-  color: black;
+  color: #333333;
 }
 
 a {
   text-decoration: none;
 }
 
+.container-fluid {
+ margin-right: auto;
+ margin-left: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+}
  /***********************************************
  *********************************************
  *** Top Header, Navigation and Site Branding ***
  *********************************************
  *********************************************/
- .container-fluid {
-   padding: 0;
- }
-
-#header {
-  margin: 0;
-  font-size: 1.2em;
+.navbar {
+  margin-bottom: 0px;
+  text-align: center;
+  background: #fff;
+  border: none;
 }
 
  /***********************************************
  ***** Site Branding left header *****
  *********************************************/
-.branding a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-#site-logo {
-  max-width: 210px;
+.navbar-brand {
   height: auto;
+  padding: 17px 15px;
 }
-
-#site-title {
-  color: #65bc45;
-  font-size: 1.5em;
+.navbar-brand img.img-responsive {
+  max-width: 210px;
 }
 
 /**********************************************
  ***** Top Navigation Menu and Login Buttons *****
  **********************************************/
 .navbar {
-  margin-bottom: 0;
-  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.075);
+  /*margin-bottom: 20px;*/
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  background: #fff;
+  height: auto;
 }
 
-.nav-li {
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-top: 8px;
+}
+.navbar-nav li {
+    padding: 0;
+    margin: 0 55px 0 0;
+}
+.navbar-nav li a {
   list-style: none;
-  margin: 10px 0;
-  padding: 5px;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  background: none;
+  font-weight: 700;
+  color: #777;
+  border-bottom: 6px solid transparent;
+  transition: .5s;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: black;
+.nav-li.active {
+  color: #333;
+  border-bottom: 6px solid #65bc45;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #777;
+  color: #333;
+  border-bottom: 6px solid #65bc45;
 }
 
-@media (min-width: 768px) {
-  .nav-justified>li {
-  width: 50px;
-  }
-}
 /**********************************************
 ***** Login and Sign Up Buttons Top Nav ****
 *********************************************/
 .login-register {
-  display: flex;
-}
-
-.btn {
-  margin: 18px 5px;
-  background-color: #ffffff;
-  border: 2px solid #65bc45;
-  border-radius: 5px;
-  color:#000;
-  text-decoration:none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.btn-default:hover {
-    color: #fff;
-    background-color: rgba(101, 188, 69, 0.98);
-    border-color: #65bc45;
+    margin-top: 14px;
   }
 
+.login-register button.btn-link {
+    display: inline-block;
+    line-height: 45px;
+    border: 2px solid transparent;
+    padding: 0px 30px;
+    color: #65bc45;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.login-register button.btn-link:hover {
+    border: 2px solid #65bc45;
+    color: #333;
+}
 /*********************************************
 ***** Hero image and text overlay - located in index.html *****
 *********************************************/
@@ -134,7 +145,7 @@ a {
     ),
     url("/img/header.jpg");
   width: 100vw;
-  margin-top: -.5em;
+  /*margin-top: -.5em;*/
 }
 
 .hero-text-div {
@@ -166,6 +177,10 @@ a {
 
 .section-title {
   display: inline-block;
+  color: #3b3939;
+  font-size: 26px;
+  font-weight: 700;
+  /*margin: 0 0 30px;*/
 }
 .view-all {
   display: inline-block;
@@ -214,7 +229,23 @@ ul.row {
 .product-description {
   margin-top: .5em;
 }
-
+.green-but {
+  display: block;
+  /*line-height: 53px;*/
+  text-align: center;
+  max-width: 212px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 9px rgba(255, 255, 255, 0.22);
+  background-color: #65bc45;
+  color: #ffffff;
+  /*font-size: 16px;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  transition: .5s;
+}
 /********************************************
 ********************************************
      ***** Single Page Default *****
