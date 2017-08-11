@@ -21,90 +21,60 @@
 
 		
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.iocss/style.css" />
 
+
+		<link rel="stylesheet" href="http://hugo.apps.thedigitalgarage.iocss/style.css" />
+		
 	</head>
 
 
 
   
-<nav class="navbar navbar-default navbar-fixed-top">
-<header id="header" class="container-fluid">
-	<div class="row">
-		<div class="branding col-md-4">
-
-			<a href="http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io">
-				<img id="site-logo" src="/img/logo.jpg" alt="logo" />
-			</a>
-			<a href="http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io">
-				<h2 id="site-title">Our Business Name</h2>
-			</a>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseThis" aria-expanded="false" aria-controls="collapseThis">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-		</div>
-
-		<div id="collapseThis" class="collapse navbar-collapse col-md-8" role="navigation">
-				<div class="row">
-					<div class="col-md-8">
-					 
-					 <ul class="nav navbar-nav navbar-right">
-						 
-						 <li class="nav-li"><a class="top-nav-item" href="/instant-app/">Instant Apps</a></li>
-						 
-						 <li class="nav-li"><a class="top-nav-item" href="/quickstart/">Quickstarts</a></li>
-						 
-				 	</ul>
-		 		</div>
-				<div class=" nav nav-pills login-register col-md-4">
-					<ul class="nav nav-justified nav-pills">
-						<li><button class="btn btn-default" type="button">Login</button></li>
-						<li><button class="btn btn-default" type="button">Sign Up</button></li>
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+				<a class="navbar-brand" href="http://hugo.apps.thedigitalgarage.io">
+					<img id="site-logo" class="img-responsive" src="/images/main-logo.png" alt="logo" />
+				</a>
+				<div class="navbar-header">
+					<button type="button" id="collapse-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseThis" aria-expanded="false" aria-controls="collapseThis">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+			</div>
+			<div class="pull-right hidden-xs hidden-sm hidden-md">
+				<div class="login-register">
+					<button class="btn btn-link login-redirect" type="button">Login</button>
+						<button class="btn btn-link register-redirect" type="button">Sign Up</button>
+				</div>
+			</div>
+			<div id="collapseThis" class="collapse navbar-collapse" role="navigation">
+				<div id="navbar-links">
+					
+					<ul class="nav navbar-nav">
+						
+						<li class="nav-li"><a class="top-nav-item" href="/instant-app/">Instant Apps</a></li>
+						
+						<li class="nav-li"><a class="top-nav-item" href="/quickstart/">Quickstarts</a></li>
+						
 					</ul>
 				</div>
 			</div>
 		</div>
- </div>
+	</nav>
 </header>
-</nav>
 
 <body>
   <div id="main" class="container-fluid">
     <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <h1 class="list-title">Mysql</h1>
-      </div>
-      <div class="col-md-8 col-lg-8 col-sm-12">
-        <ul id="product-list">
-            
-                <li class="product-list-item">
-<a href="http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io/instant-app/wordpress/">Instant Wordpress</a>
-<p> everything you need to run Wordpress </p>
-<ul class="tags">
-  <li><h4>Tags:</h4></li>
-  
-  <li><a href="/tags/wordpress">wordpress</a> </li>
-  
-  <li><a href="/tags/php">php</a> </li>
-  
-  <li><a href="/tags/mysql">mysql</a> </li>
-  
-</ul>
-
-</li>
-
-            
-        </ul>
-      </div>
-      <div class="col-md-4 sidebar visible-md-4 visible-lg-4">
-        <div class="well well-lg">
-<h4 id="sidebar-title">Explore the Site</h4>
+      <div class="col-md-4 sidebar hidden-xs hidden-sm">
+        <div class="nav-sidebar">
+<h4 id="sidebar-title">Explore the Marketplace</h4>
   <ul class="side-list list-unstyled">
     
-      <li>Categories
+      <li> Categories:
         <ul class="side-sub-list">
           
           <li><a href="/categories/instant-app"> Instant App </a> </li>
@@ -114,7 +84,7 @@
         </ul>
       </li>
     
-      <li>Tags
+      <li> Tags:
         <ul class="side-sub-list">
           
           <li><a href="/tags/javascript"> Javascript </a> </li>
@@ -136,6 +106,34 @@
 </div>
 
       </div>
+      <div class="col-md-8 col-sm-12">
+        <h2 class="list-title">Mysql</h2>
+        <hr>
+      </div>
+      <div class="col-md-8 col-lg-8 col-sm-12">
+        <ul id="product-list">
+            
+                <li class="product-list-item">
+<a class="list-item-title" href="http://hugo.apps.thedigitalgarage.io/instant-app/wordpress/">Instant Wordpress</a>
+<p> everything you need to run Wordpress </p>
+<ul class="tags">
+  <li><h4>Tags:</h4></li>
+  
+  <li><a href="/tags/wordpress">wordpress</a> </li>
+  
+  <li><a href="/tags/php">php</a> </li>
+  
+  <li><a href="/tags/mysql">mysql</a> </li>
+  
+</ul>
+
+</li>
+
+                <hr>
+            
+        </ul>
+      </div>
+
     </div>
   </div>
 </body>
