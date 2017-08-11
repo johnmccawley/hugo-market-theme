@@ -5,19 +5,22 @@
 <body>
   <div id="main" class="container-fluid">
     <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <h1 class="list-title">{{ .Title | humanize | title }}</h1>
+      <div class="col-md-4 sidebar hidden-xs hidden-sm">
+        {{ partial "sidebar.html" . }}
+      </div><!--col with sidebar-->
+      <div class="col-md-8 col-sm-12">
+        <h2 class="list-title">{{ .Title | humanize | title }}</h2>
+        <hr>
       </div><!-- end list-title div -->
       <div class="col-md-8 col-lg-8 col-sm-12">
         <ul id="product-list">
             {{ range .Data.Pages }}
                 {{ .Render "li"}}
+                <hr>
             {{ end }}
         </ul>
       </div><!-- end product list div -->
-      <div class="col-md-4 sidebar visible-md-4 visible-lg-4">
-        {{ partial "sidebar.html" . }}
-      </div><!--col with sidebar-->
+
     </div><!-- end body row-->
   </div><!-- end #main .container-fluid -->
 </body>

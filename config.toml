@@ -1,4 +1,4 @@
-baseURL = "http://hugo-market-digitalgarage-template-test.apps.thedigitalgarage.io"
+baseURL = "http://hugo-marketplace.test.apps.thedigitalgarage.io"
 languageCode = "en-us"
 title = "My Product Marketplace"
 theme = "market"

@@ -1,41 +1,34 @@
 
-<nav class="navbar navbar-default navbar-fixed-top">
-<header id="header" class="container-fluid">
-	<div class="row">
-		<div class="branding col-md-4">
-
-			<a href="{{ .Site.BaseURL }}">
-				<img id="site-logo" src="/img/logo.jpg" alt="logo" />
-			</a>
-			<a href="{{ .Site.BaseURL }}">
-				<h2 id="site-title">{{ .Site.Params.Title }}</h2>
-			</a>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseThis" aria-expanded="false" aria-controls="collapseThis">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-		</div>
-
-		<div id="collapseThis" class="collapse navbar-collapse col-md-8" role="navigation">
-				<div class="row">
-					<div class="col-md-8">
-					 {{ $currentPage := . }}
-					 <ul class="nav navbar-nav navbar-right">
-						 {{ range .Site.Menus.main }}
-						 <li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
-						 {{ end }}
-				 	</ul>
-		 		</div><!--site navigation-->
-				<div class=" nav nav-pills login-register col-md-4">
-					<ul class="nav nav-justified nav-pills">
-						<li><button class="btn btn-default" type="button">Login</button></li>
-						<li><button class="btn btn-default" type="button">Sign Up</button></li>
-					</ul>
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+				<a class="navbar-brand" href="{{ .Site.BaseURL }}">
+					<img id="site-logo" class="img-responsive" src="/images/main-logo.png" alt="logo" />
+				</a>
+				<div class="navbar-header">
+					<button type="button" id="collapse-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseThis" aria-expanded="false" aria-controls="collapseThis">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+			</div>
+			<div class="pull-right hidden-xs hidden-sm hidden-md">
+				<div class="login-register">
+					<button class="btn btn-link login-redirect" type="button">Login</button>
+						<button class="btn btn-link register-redirect" type="button">Sign Up</button>
 				</div><!--login-register-->
-			</div><!--inner navbar row-->
-		</div><!--role = navigation #collapseThis-->
- </div><!--entire header .row-->
+			</div><!--pull-right -->
+			<div id="collapseThis" class="collapse navbar-collapse" role="navigation">
+				<div id="navbar-links">
+					{{ $currentPage := . }}
+					<ul class="nav navbar-nav">
+						{{ range .Site.Menus.main }}
+						<li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
+						{{ end }}
+					</ul>
+				</div><!--navbar-links-->
+			</div><!--collapse-->
+		</div><!--container-fluid-->
+	</nav>
 </header>
-</nav>
