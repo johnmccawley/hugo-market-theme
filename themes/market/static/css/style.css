@@ -295,7 +295,9 @@ ul.row {
 ********************************************/
 .single-logo {
   width: 80%;
+  margin-left: 1em;
 }
+
 .breadcrumb {
   background-color: white;
   border-radius: 0;
