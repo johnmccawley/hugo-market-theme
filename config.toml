@@ -8,6 +8,6 @@ disableKinds=["RSS"]
 [params]
   description = "a site for displaying product info, built with Docker containers and other app builders in mind"
   welcome = "Welcome to Our Marketplace"
-  title = "Our Business Name"
+  title = "Digital Garage Marketplace"
   loginUrl = "https://cochera.thedigitalgarage.io/dashboard"
   signupUrl = "https://cochera.thedigitalgarage.io/free-signup"

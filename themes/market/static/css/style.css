@@ -330,6 +330,7 @@ ul.row {
   height: 100vw;
   border-right: 1px solid #e7e7e7;
   display: block;
+  max-width: 300px;
 }
 
 #sidebar-title {
