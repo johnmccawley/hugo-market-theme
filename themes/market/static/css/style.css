@@ -379,3 +379,79 @@ ul.row {
   text-decoration: none;
   border-bottom: 6px solid #65bc45;
 }
+
+/*************************************
+***** Footer *****
+*************************************/
+
+footer {
+    font-family: Arial, Helvetica;
+    text-align: center;
+    background: #636466;
+    padding: 50px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer h5 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 75px;
+    color: #fff;
+}
+
+footer h5 a {
+    color: inherit;
+}
+
+footer .footer__links {
+    position: relative;
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+    width: 225px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+}
+
+
+footer .footer__links ul {
+    list-style: none;
+    padding-left: 95px;
+    position: relative;
+    text-align: left;
+}
+
+footer .footer__links ul li {
+    margin-bottom: 14px;
+}
+
+footer .footer__links ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit;
+    line-height: 1;
+}
+
+.coppy {
+    display: inline-block;
+    margin-top: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+footer .social li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+footer .social li a {
+  color: inherit;
+}
