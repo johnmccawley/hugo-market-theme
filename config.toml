@@ -9,3 +9,5 @@ disableKinds=["RSS"]
   description = "a site for displaying product info, built with Docker containers and other app builders in mind"
   welcome = "Welcome to Our Marketplace"
   title = "Our Business Name"
+  loginUrl = "https://cochera.thedigitalgarage.io/dashboard"
+  signupUrl = "https://cochera.thedigitalgarage.io/free-signup"

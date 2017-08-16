@@ -15,8 +15,8 @@
 			</div>
 			<div class="pull-right hidden-xs hidden-sm hidden-md">
 				<div class="login-register">
-					<button class="btn btn-link login-redirect" type="button">Login</button>
-						<button class="btn btn-link register-redirect" type="button">Sign Up</button>
+					<a class="btn btn-link login-redirect" href="{{ .Site.Params.loginUrl }}">Login</a>
+					<a class="btn btn-link register-redirect" href="{{ .Site.Params.signupUrl }}">Sign Up</a>
 				</div><!--login-register-->
 			</div><!--pull-right -->
 			<div id="collapseThis" class="collapse navbar-collapse" role="navigation">
