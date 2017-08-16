@@ -11,3 +11,4 @@ disableKinds=["RSS"]
   title = "Digital Garage Marketplace"
   loginUrl = "https://cochera.thedigitalgarage.io/dashboard"
   signupUrl = "https://cochera.thedigitalgarage.io/free-signup"
+  favicon = "img/favicon.png"
