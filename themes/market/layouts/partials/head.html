@@ -13,6 +13,8 @@
 		{{ end }}
 
 		{{ .Hugo.Generator }}
+
+		<link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
 		<!-- Latest compiled and minified CSS for Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript /jQuery for Bootstrap -->
@@ -21,11 +23,7 @@
 
 		<!-- Font Awesome CDN -->
 		<script src="https://use.fontawesome.com/2fca6929a8.js"></script>
-		
+
 		<!-- Stylesheet created for Market Theme -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
-		<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/subdomain.css" /> -->
 	</head>
