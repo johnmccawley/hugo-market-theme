@@ -1,4 +1,4 @@
-baseURL = "http://hugo-market.apps.thedigitalgarage.io"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "My Product Marketplace"
 theme = "market"
@@ -12,3 +12,9 @@ disableKinds=["RSS"]
   loginUrl = "https://cochera.thedigitalgarage.io/dashboard"
   signupUrl = "https://cochera.thedigitalgarage.io/free-signup"
   favicon = "img/favicon.png"
+
+[[menu.main]]
+  name = "welcome"
+  weight = 1
+  identifier = "index"
+  url = "/"
