@@ -19,10 +19,16 @@
 					<a class="btn btn-link register-redirect" href="{{ .Site.Params.signupUrl }}">Sign Up</a>
 				</div><!--login-register-->
 			</div><!--pull-right -->
-			<div id="collapseThis" class="collapse navbar-collapse" role="navigation">
+			<div id="collapseThis" class="collapse navbar-collapse" role="navigation" aria-expanded="true">
 				<div id="navbar-links">
 					{{ $currentPage := . }}
 					<ul class="nav navbar-nav">
+						<li class="hidden-lg">
+							<div class="login-register">
+								<a class="btn btn-link login-redirect" href="{{ .Site.Params.loginUrl }}">Login</a>
+								<a class="btn btn-link register-redirect" href="{{ .Site.Params.signupUrl }}">Sign Up</a>
+							</div><!--login-register-->
+						</li>
 						{{ range .Site.Menus.main }}
 						<li class="nav-li"><a class="top-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name | humanize | title }}</a></li>
 						{{ end }}

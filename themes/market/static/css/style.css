@@ -56,121 +56,141 @@ hr {
     border: 0;
     border-top: 1px solid #e7e7e7;
 }
- /***********************************************
- *********************************************
- *** Top Header, Navigation and Site Branding ***
- *********************************************
- *********************************************/
+/***********************************************
+*********************************************
+*** Top Header, Navigation and Site Branding ***
+*********************************************
+*********************************************/
+
+/***** Site Branding left header *******/
+.navbar-brand {
+ height: auto;
+ padding: 17px 15px;
+}
+.navbar-brand img.img-responsive {
+ max-width: 210px;
+}
+
+/**** Top Navigation Menu  *************/
 .navbar {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  background: #fff;
+  height: auto;
   margin-bottom: 0px;
   text-align: center;
   background: #fff;
   border: none;
 }
 
- /***********************************************
- ***** Site Branding left header *****
- *********************************************/
-.navbar-brand {
-  height: auto;
-  padding: 17px 15px;
-}
-.navbar-brand img.img-responsive {
-  max-width: 210px;
-}
-
-/**********************************************
- ***** Top Navigation Menu and Login Buttons *****
- **********************************************/
-.navbar {
-  /*margin-bottom: 20px;*/
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  background: #fff;
-  height: auto;
-}
-
 .navbar .navbar-nav {
-  display: inline-block;
+  /*display: inline-block;*/
   float: none;
   vertical-align: top;
   margin-top: 8px;
 }
+
 .navbar-nav li {
-    padding: 0;
-    margin: 0 55px 0 0;
+  padding: 0;
+  margin: 0 55px 0 0;
 }
+
 .navbar-nav li a {
-  list-style: none;
-  text-transform: uppercase;
-  padding: 20px 0px;
-  background: none;
-  font-weight: 700;
-  color: #777;
-  border-bottom: 6px solid transparent;
-  transition: .5s;
+ list-style: none;
+ text-transform: uppercase;
+ padding: 20px 0px;
+ background: none;
+ font-weight: 700;
+ color: #777;
+ border-bottom: 6px solid transparent;
+ transition: .5s;
 }
 
 .nav-li.active {
-  color: #333;
-  border-bottom: 6px solid #65bc45;
+ color: #555;
+ border-bottom: 6px solid #65bc45;
+}
+.navbar-default .navbar-nav>li>a.top-nav-item.active {
+ color: #555;
+ border-bottom: 6px solid #65bc45;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #333;
-  border-bottom: 6px solid #65bc45;
+ color: #555;
+ border-bottom: 6px solid #65bc45;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #65bc45;
+ background-color: #65bc45;
 }
 .navbar-default .navbar-toggle {
-  border-color: #65bc45;
-  margin-top: 20px;
+ border-color: #65bc45;
+ margin-top: 20px;
 }
 
-@media (min-width: 1026px) {
-.navbar-toggle {
+@media screen and (min-width: 1200px) {
+  .navbar-toggle {
     display: none;
-} }
-
-@media (min-width: 1026px) {
-.navbar-collapse.collapse {
-    display: block!important;
-    height: auto!important;
-    padding-bottom: 0;
-    overflow: visible!important;
   }
 }
-/**********************************************
-***** Login and Sign Up Buttons Top Nav ****
-*********************************************/
-.login-register {
-    margin-top: 14px;
+
+@media screen and (max-width: 1200px){
+  .navbar-toggle {
+    display: block;
   }
+  .navbar-nav li {
+    float: none;
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+  }
+  .navbar-collapse {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background-color: #fff;
+    text-align: center;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-nav li a {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+  }
+}
+
+/**** Login and Sign Up Buttons (Top Nav) *****/
+.login-register {
+   margin-top: 14px;
+ }
 
 .login-register a.btn-link {
-    display: inline-block;
-    line-height: 45px;
-    border: 2px solid transparent;
-    padding: 0px 30px;
-    color: #65bc45;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: .5s;
+   display: inline-block;
+   line-height: 45px;
+   border: 2px solid transparent;
+   padding: 0px 30px;
+   color: #65bc45;
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: .5s;
 }
 
 .login-register a.btn-link:hover {
-    border: 2px solid #65bc45;
-    color: #333;
+   border: 2px solid #65bc45;
+   color: #333;
 }
-/*********************************************
-***** Hero image and text overlay - located in index.html *****
-*********************************************/
+
+/***********************************************
+* Hero image and text overlay - see index.html *
+************************************************/
 .hero-img {
   background-image:
     linear-gradient(
@@ -179,7 +199,6 @@ hr {
     ),
     url("/img/header.jpg");
   width: 100vw;
-  /*margin-top: -.5em;*/
 }
 
 .hero-text-div {
@@ -190,20 +209,14 @@ hr {
   text-align: center;
 }
 
-/*@media screen and (min-width: 767px) and (max-width: 1058px) {
-.hero-img {
-    margin-top: 48px;
-  }
-}*/
-
 @media screen and (max-width: 425px) {
   .hero-img {
     margin-top: 2em;
   }
 }
-/*********************************************
-***** landing page items *****
-********************************************/
+/***********************************************
+********** Landing/Welcome Page Items **********
+************************************************/
 
 #landing-list {
   margin-left: 1em
@@ -211,10 +224,8 @@ hr {
 
 .section-title {
   display: inline-block;
-  /*color: #3b3939;*/
   font-size: 26px;
   font-weight: 700;
-  /*margin: 0 0 30px;*/
 }
 .view-all {
   display: inline-block;
@@ -262,16 +273,16 @@ ul.row {
 }
 
 @media screen and (max-width: 768px) {
-    .product-description {
-      display: none;
-    }
-    .product-name {
-      display: none;
-    }
-    .product-box {
-      height: auto;
-      width: auto;
-    }
+  .product-description {
+    display: none;
+  }
+  .product-name {
+    display: none;
+  }
+  .product-box {
+    height: auto;
+    width: auto;
+  }
 }
 
 .green-but {
@@ -296,9 +307,7 @@ ul.row {
   background-color: #ffffff;
 }
 /********************************************
-********************************************
-     ***** Single Page Default *****
-********************************************
+********** Single Page Default *************
 ********************************************/
 .single-logo {
   width: 80%;
@@ -332,7 +341,7 @@ ul.row {
 }
 
 /********************************************
-     ***** Sidebar *****
+*************** Sidebar ********************
 ********************************************/
 .sidebar {
   margin: 10px 0 0;
