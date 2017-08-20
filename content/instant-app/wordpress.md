@@ -1,7 +1,7 @@
 +++
 categories = ["instant-app"]
 date = "2017-06-20T08:06:48-06:00"
-description = "everything you need to run Wordpress"
+description = "Everything you need to run Wordpress."
 downloadUrl = ""
 logo = "/images/wordpress-logo.png"
 productName = "Instant Wordpress"
