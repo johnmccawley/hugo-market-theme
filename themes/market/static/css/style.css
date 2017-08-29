@@ -162,8 +162,16 @@ hr {
     width: auto;
     display: inline-block;
   }
-}
 
+/*overwrite weird default bootstrap that is causing problems*/
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+}
 /**** Login and Sign Up Buttons (Top Nav) *****/
 .login-register {
    margin-top: 14px;
