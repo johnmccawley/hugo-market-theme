@@ -4,7 +4,7 @@ description = "Build and run WildFly 10.1 applications on CentOS 7"
 date = "08/20/17"
 
 productName = "WildFly"
-logo = "/img/logo.jpg"
+logo = ""
 tags = ["java"]
 categories = ["builder"]
 

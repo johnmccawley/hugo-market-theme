@@ -265,11 +265,11 @@ ul.row {
   width: 100px;
   height: auto;
   display: inline-flex;
+  margin-right: .5em;
 }
 
 .product-name {
   display: inline-flex;
-  padding-left: .5em;
 }
 
 .product-name:hover {
@@ -280,12 +280,20 @@ ul.row {
   margin-top: 1.25em;
 }
 
+.logo-placeholder {
+  display: none;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 768px) {
   .product-description {
     display: none;
   }
   .product-name {
     display: none;
+  }
+  .logo-placeholder {
+    display: block;
   }
   .product-box {
     height: auto;

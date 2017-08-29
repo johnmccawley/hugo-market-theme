@@ -4,7 +4,7 @@ description = "Laravel SQL Lite"
 date = "08/20/17"
 
 productName = "Laravel"
-logo = "/img/logo.jpg"
+logo = ""
 tags = ["php","laravel","mysql"]
 categories = ["add-on"]
 

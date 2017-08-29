@@ -25,7 +25,11 @@
         {{ range $sections.Pages }}
         <li class="product-box col-md-3">
           <a class="box-item" href="{{ .Permalink}}">
+            {{ if .Params.logo }}
             <img class="product-logo box-item" src="{{ .Params.logo }}" />
+            {{ else }}
+            <h4 class="logo-placeholder box-item">{{ .Params.productname }}</h4>
+            {{ end }}
             <h4 class="product-name box-item">{{ .Params.productname }}</h4>
           </a>
           <p class="product-description box-item"> {{ .Params.description }}</p>
